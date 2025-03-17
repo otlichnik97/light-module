@@ -73,6 +73,18 @@
 },
 {
   "directory": "C:/Dev/STMRepos/light_module",
+  "command": "C:\\ST\\STM32CubeCLT\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER -IC:/Dev/STMRepos/light_module/Core/Inc -IC:/Dev/STMRepos/light_module/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/Dev/STMRepos/light_module/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/Dev/STMRepos/light_module/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/Dev/STMRepos/light_module/Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\light_module.dir\\Core\\Src\\led_effects.c.obj -c C:\\Dev\\STMRepos\\light_module\\Core\\Src\\led_effects.c",
+  "file": "C:\\Dev\\STMRepos\\light_module\\Core\\Src\\led_effects.c",
+  "output": "CMakeFiles\\light_module.dir\\Core\\Src\\led_effects.c.obj"
+},
+{
+  "directory": "C:/Dev/STMRepos/light_module",
+  "command": "C:\\ST\\STM32CubeCLT\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER -IC:/Dev/STMRepos/light_module/Core/Inc -IC:/Dev/STMRepos/light_module/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/Dev/STMRepos/light_module/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/Dev/STMRepos/light_module/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/Dev/STMRepos/light_module/Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles\\light_module.dir\\Core\\Src\\ws2812b.c.obj -c C:\\Dev\\STMRepos\\light_module\\Core\\Src\\ws2812b.c",
+  "file": "C:\\Dev\\STMRepos\\light_module\\Core\\Src\\ws2812b.c",
+  "output": "CMakeFiles\\light_module.dir\\Core\\Src\\ws2812b.c.obj"
+},
+{
+  "directory": "C:/Dev/STMRepos/light_module",
   "command": "C:\\ST\\STM32CubeCLT\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER -IC:/Dev/STMRepos/light_module/Core/Inc -IC:/Dev/STMRepos/light_module/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/Dev/STMRepos/light_module/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/Dev/STMRepos/light_module/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/Dev/STMRepos/light_module/Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Core\\Src\\system_stm32f1xx.c.obj -c C:\\Dev\\STMRepos\\light_module\\Core\\Src\\system_stm32f1xx.c",
   "file": "C:\\Dev\\STMRepos\\light_module\\Core\\Src\\system_stm32f1xx.c",
   "output": "cmake\\stm32cubemx\\CMakeFiles\\STM32_Drivers.dir\\__\\__\\Core\\Src\\system_stm32f1xx.c.obj"

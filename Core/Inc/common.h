@@ -1,6 +1,9 @@
 #ifndef INC_COMMON_H_
 #define INC_COMMON_H_
 
+#define MAX_CHANNEL_LEDS    4
+#define MAX_CHANNEL         8
+
 typedef enum {
     FUNC_STOP,
     FUNC_RIGHT_TURN,

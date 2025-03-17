@@ -1,0 +1,6 @@
+C:/Dev/STMRepos/light_module/CMakeFiles/light_module.dir
+C:/Dev/STMRepos/light_module/CMakeFiles/edit_cache.dir
+C:/Dev/STMRepos/light_module/CMakeFiles/rebuild_cache.dir
+C:/Dev/STMRepos/light_module/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+C:/Dev/STMRepos/light_module/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+C:/Dev/STMRepos/light_module/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

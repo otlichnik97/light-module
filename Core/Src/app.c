@@ -7,13 +7,12 @@
 
 tChannel channels[NUM_CHANNELS];
 
+int App_InitChannels(tChannel* channels);
+
+
 int App_Init() {
     InitFrame();
-    // CBA: 111 - 1 канал, 110 - 2 канал, 101 - 3 канал, 100 - 4 канал
-  
-    HAL_GPIO_WritePin(ADDR_A_GPIO_Port, ADDR_A_Pin, RESET);
-    HAL_GPIO_WritePin(ADDR_B_GPIO_Port, ADDR_B_Pin, RESET);
-    HAL_GPIO_WritePin(ADDR_C_GPIO_Port, ADDR_C_Pin, SET);
+
     HAL_GPIO_WritePin(PWR_CH_1_GPIO_Port, PWR_CH_1_Pin, RESET);
     HAL_GPIO_WritePin(PWR_CH_2_GPIO_Port, PWR_CH_2_Pin, RESET);
     HAL_GPIO_WritePin(PWR_CH_3_GPIO_Port, PWR_CH_3_Pin, RESET);
@@ -37,3 +36,4 @@ int App_Run(){
 int App_ErrorHandler() {
 
 }
+

@@ -13,6 +13,11 @@ void Multiplexer_Init(tMultiplexer* device,
     device->pins[2] = pin_c;
 }
 
-void Multiplexer_SetChannel(uint8_t channel) {
-
+void Multiplexer_SetChannel(tMultiplexer* device, uint8_t channel) {
+    // CBA: 111 - 1 канал, 110 - 2 канал, 101 - 3 канал, 100 - 4 канал, 011, 010, 001, 000
+    channel = 7 - channel;
+  
+    HAL_GPIO_WritePin(device->ports[0], device->pins[0], channel & 0b001);
+    HAL_GPIO_WritePin(device->ports[1], device->pins[1], channel & 0b010);
+    HAL_GPIO_WritePin(device->ports[2], device->pins[2], channel & 0b100);
 }

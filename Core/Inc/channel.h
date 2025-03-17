@@ -4,6 +4,7 @@
 #include "main.h"
 #include "gpio.h"
 #include "led.h"
+#include "common.h"
 
 #include "stdint.h"
 
@@ -16,11 +17,12 @@ typedef enum {
 typedef struct {
     eChannelType type;
     uint8_t num_leds;
-    tLed leds[4];
+    tLed leds[MAX_CHANNEL_LEDS];
     GPIO_TypeDef* power_port;
     uint16_t power_pin;
 } tChannel;
 
-void Channel_Init(eChannelType type, uint8_t leds);
+void Channel_Init(tChannel* channel, eChannelType type, uint8_t leds);
+void Channel_SetPowerPort(tChannel* channel, GPIO_TypeDef* power_port, uint16_t power_pin);
 
 #endif // INC_CHANNEL_H_
