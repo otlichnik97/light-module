@@ -27,7 +27,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "led_effects.h"
+#include "app.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -99,28 +100,14 @@ int main(void)
   MX_USART2_UART_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-  InitFrame();
-  // CBA: 111 - 1 канал, 110 - 2 канал, 101 - 3 канал, 100 - 4 канал
-
-  HAL_GPIO_WritePin(ADDR_A_GPIO_Port, ADDR_A_Pin, RESET);
-  HAL_GPIO_WritePin(ADDR_B_GPIO_Port, ADDR_B_Pin, RESET);
-  HAL_GPIO_WritePin(ADDR_C_GPIO_Port, ADDR_C_Pin, SET);
-  HAL_GPIO_WritePin(PWR_CH_1_GPIO_Port, PWR_CH_1_Pin, RESET);
-  HAL_GPIO_WritePin(PWR_CH_2_GPIO_Port, PWR_CH_2_Pin, RESET);
-  HAL_GPIO_WritePin(PWR_CH_3_GPIO_Port, PWR_CH_3_Pin, RESET);
-  HAL_GPIO_WritePin(PWR_CH_4_GPIO_Port, PWR_CH_4_Pin, RESET);
+  App_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    HAL_GPIO_WritePin(PWR_CH_1_GPIO_Port, PWR_CH_1_Pin, RESET);
-	  SetLed();
-	  HAL_Delay(500);
-	  HAL_GPIO_WritePin(PWR_CH_1_GPIO_Port, PWR_CH_1_Pin, SET);
-	  ClearLed();
-	  HAL_Delay(500);
+      App_Run();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
